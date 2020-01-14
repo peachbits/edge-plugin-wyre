@@ -104,7 +104,7 @@ export async function getAccount(account: string, token: string) {
       'Content-Type': 'application/json'
     }
   }
-  const url = 'https://api.sendwyre.com/v2/account/' + account + '?timestamp=' + timestamp
+  const url = 'https://api.sendwyre.com/v3/account/' + account + '?timestamp=' + timestamp
   const result = await window.fetch(url, data)
   const newData = result.json()
   return newData
